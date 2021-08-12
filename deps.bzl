@@ -8,8 +8,8 @@ def swift_syntax_deps():
 
     http_archive(
         name = "com_github_keith_lib_internalswiftsyntaxparser",
-        sha256 = "65566d949ecefa8156d0097a24b8213fff3bc6c0e26f2ee299b655357682613e",
-        urls = ["https://github.com/keith/lib_InternalSwiftSyntaxParser/releases/download/12.5.12E262/lib_InternalSwiftSyntaxParser.dylib.zip"],
+        sha256 = "5ea43b22df9ef6b2a8a286183804ebe798615067715282e46e704500b12934fd",
+        urls = ["https://github.com/keith/lib_InternalSwiftSyntaxParser/releases/download/13.0.13A5154h/lib_InternalSwiftSyntaxParser.dylib.zip"],
         build_file_content = """
 filegroup(
     name = "library",
@@ -22,7 +22,7 @@ filegroup(
     http_archive(
         name = "com_github_keith_swift_syntax",
         build_file = "@com_github_keith_swift_syntax_bazel//:SwiftSyntax.BUILD",
-        sha256 = "a1ad87076794f2fd3edb016ffcb9f49de5a0cf1323809c60400753279ef510ba",
-        strip_prefix = "swift-syntax-0.50400.0",
-        url = "https://github.com/apple/swift-syntax/archive/0.50400.0.tar.gz",
+        sha256 = "e2e0a56af02f1aba5282f3947bb0236baa810df4b5265d059493fce1dc4dd652",
+        strip_prefix = "swift-syntax-swift-5.5-DEVELOPMENT-SNAPSHOT-2021-07-16-a",
+        url = "https://github.com/apple/swift-syntax/archive/refs/tags/swift-5.5-DEVELOPMENT-SNAPSHOT-2021-07-16-a.tar.gz",
     )
